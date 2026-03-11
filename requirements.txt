@@ -1,7 +1,8 @@
 Flask
 Flask-SQLAlchemy
 transformers==4.40.2
-torch==2.2.2
+torch==2.10.0
 sentencepiece
 accelerate
+Werkzeug
 gunicorn
