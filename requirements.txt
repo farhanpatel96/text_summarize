@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+transformers
+torch
+sentencepiece
+accelerate
+Werkzeug
