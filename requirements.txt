@@ -1,6 +1,6 @@
 Flask
 Flask-SQLAlchemy
-transformers
+transformers==4.40.2
 torch
 sentencepiece
 accelerate
