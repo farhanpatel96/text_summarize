@@ -13,8 +13,12 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # AI Models
+# AI Models
 summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
-question_generator = pipeline("text2text-generation", model="google/flan-t5-base")
+question_generator = pipeline("text2text-generation", model="google/flan-t5-small")
+
+#summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
+#question_generator = pipeline("text2text-generation", model="google/flan-t5-base")
 
 # -----------------------
 # Database Models
@@ -140,7 +144,7 @@ def dashboard():
 @app.route("/logout")
 def logout():
     session.clear()
-    return redirect(url_for("login.html"))
+    return redirect(url_for("login"))
 
 # -----------------------
 # Run App
